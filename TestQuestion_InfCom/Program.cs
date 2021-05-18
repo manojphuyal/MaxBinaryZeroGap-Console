@@ -21,7 +21,7 @@ namespace TestQuestion_InfCom
                 Console.WriteLine("0 doesn't contain a binary gap.");
                 return "0";
             }
-            else if(deci>0 ||deci<9999999)
+            else if(deci>0 && deci<9999999)
             {
                 int num = Convert.ToInt32(deci);
 
@@ -40,7 +40,6 @@ namespace TestQuestion_InfCom
                 return "0";
             }
         }
-
         public long maxZeros(long max)
         {                                          
             int length = max.ToString().Length;
